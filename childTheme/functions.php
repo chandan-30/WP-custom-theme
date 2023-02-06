@@ -1,3 +1,4 @@
+
 <?php    
 function twentytwentyone_styles() {
     wp_enqueue_style( 'child-style', get_stylesheet_uri(),
@@ -24,4 +25,29 @@ function custom_sidebars() {
   
 }
 add_action( 'widgets_init', 'custom_sidebars' );
+
+?>
+
+<?php 
+//Enqueueing styles in childtheme
+
+function enque_styles() { //function to enque styles
+    wp_register_style('my_styles',
+    'http://wpsitelocal.local/wp-content/themes/childTheme/my_styles.css'); //Registering a stylesheet
+    wp_enqueue_style('my_styles'); //enqueues a stylesheet
+}
+add_action('wp_enqueue_scripts','enque_styles'); //action hook
+
+?>
+
+<?php 
+//Enqueueing styles in childtheme
+
+function enque_script() { //function to enque script
+    wp_register_script('my_script',
+    'http://wpsitelocal.local/wp-content/themes/childTheme/my_script.js', array(), 1.0, true); //Registering a script
+    wp_enqueue_script('my_script'); //enqueues a script
+}
+add_action('wp_enqueue_scripts','enque_script'); //action hook
+
 ?>

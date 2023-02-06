@@ -1,0 +1,13 @@
+/*
+Theme Name:   WPB Child Theme
+Theme URI:    ''
+Description:  A Twenty Twenty-One child theme 
+Author:       CHANDAN
+Author URI:   ''
+Template:     twentytwentyone
+Version:      1.0.0
+Text Domain:  twentytwentyonechild
+*/
+body {
+    background-color: rgb(238, 183, 183) !important;
+}
