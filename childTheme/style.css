@@ -1,0 +1,30 @@
+Theme Name:   WPB Child Theme
+ Theme URI:    https://www.wpbeginner.com/
+ Description:  A Twenty Twenty-One child theme 
+ Author:       WPBeginner
+ Author URI:   https://www.wpbeginner.com
+ Template:     twentytwentyone
+ Version:      1.0.0
+ Text Domain:  twentytwentyonechild
+ */
+  
+.site-title {
+    color: #7d7b77;
+}
+.site-description {
+    color: #aba8a2;
+}
+body {
+     background-color: #fdf8ef;
+     color: #7d7b77;
+}
+.entry-footer {
+    color: #aba8a2;
+}
+.entry-title {
+    color: #aba8a2;
+    font-weight: bold;
+}
+.widget-area {
+    color: #7d7b77;
+}
